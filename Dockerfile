@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 # Timezone
 ENV TZ=Europe/Berlin
@@ -89,9 +89,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     apt-get install -y yarn
 
 # Ansible
-RUN apt-add-repository ppa:ansible/ansible && \
-    apt-get update && \
-    apt-get install -y ansible
+RUN apt-get install -y ansible
 
 # SSH
 RUN mkdir ~/.ssh && touch ~/.ssh_config
