@@ -69,7 +69,8 @@ RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && \
     php7.4-xml \
     php7.4-xmlrpc \
     php7.4-xsl \
-    php7.4-zip
+    php7.4-zip \
+    php7.4-phpdbg
 
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
