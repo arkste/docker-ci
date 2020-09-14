@@ -1,5 +1,7 @@
 FROM ubuntu:focal
 
+RUN sed -i 's|http://archive.ubuntu.com|http://mirror.first-colo.net|g' /etc/apt/sources.list
+
 # Timezone
 ENV TZ=Europe/Berlin
 
