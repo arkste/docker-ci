@@ -42,15 +42,15 @@ RUN add-apt-repository ppa:git-core/ppa && \
 RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && \
     apt-get update && \
     apt-get install -y \
-    php-amqp \
-    php-apcu \
+    php7.2-amqp \
+    php7.2-apcu \
     php-apcu-bc \
     php-gearman \
     php-geoip \
     php-gmagick \
-    php-memcached \
-    php-redis \
-    php-xdebug \
+    php7.2-memcached \
+    php7.2-redis \
+    php7.2-xdebug \
     php7.2-bcmath \
     php7.2-bz2 \
     php7.2-cli \
