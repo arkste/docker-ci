@@ -42,37 +42,37 @@ RUN add-apt-repository ppa:git-core/ppa && \
 RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && \
     apt-get update && \
     apt-get install -y \
-    php7.4-amqp \
-    php7.4-apcu \
+    php8.0-amqp \
+    php8.0-apcu \
     php-apcu-bc \
     php-gearman \
     php-geoip \
     php-gmagick \
-    php7.4-memcached \
-    php7.4-redis \
-    php7.4-xdebug \
-    php7.4-bcmath \
-    php7.4-bz2 \
-    php7.4-cli \
-    php7.4-common \
-    php7.4-curl \
-    php7.4-dev \
-    php7.4-gd \
-    php7.4-gmp \
-    php7.4-imap \
-    php7.4-intl \
-    php7.4-json \
-    php7.4-ldap \
-    php7.4-mbstring \
-    php7.4-mysql \
-    php7.4-pgsql \
-    php7.4-soap \
-    php7.4-sqlite3 \
-    php7.4-xml \
-    php7.4-xmlrpc \
-    php7.4-xsl \
-    php7.4-zip \
-    php7.4-phpdbg
+    php8.0-memcached \
+    php8.0-redis \
+    php8.0-xdebug \
+    php8.0-bcmath \
+    php8.0-bz2 \
+    php8.0-cli \
+    php8.0-common \
+    php8.0-curl \
+    php8.0-dev \
+    php8.0-gd \
+    php8.0-gmp \
+    php8.0-imap \
+    php8.0-intl \
+    php8.0-json \
+    php8.0-ldap \
+    php8.0-mbstring \
+    php8.0-mysql \
+    php8.0-pgsql \
+    php8.0-soap \
+    php8.0-sqlite3 \
+    php8.0-xml \
+    php8.0-xmlrpc \
+    php8.0-xsl \
+    php8.0-zip \
+    php8.0-phpdbg
 
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
