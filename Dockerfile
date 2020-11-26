@@ -44,10 +44,10 @@ RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && \
     apt-get install -y \
     php7.1-amqp \
     php7.1-apcu \
-    php-apcu-bc \
-    php-gearman \
-    php-geoip \
-    php-gmagick \
+    php7.1-apcu-bc \
+    php7.1-gearman \
+    php7.1-geoip \
+    php7.1-gmagick \
     php7.1-memcached \
     php7.1-redis \
     php7.1-xdebug \
