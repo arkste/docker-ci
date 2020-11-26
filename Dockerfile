@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 RUN sed -i 's|http://archive.ubuntu.com|http://mirror.first-colo.net|g' /etc/apt/sources.list
 
@@ -80,7 +80,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
     composer self-update
 
 # Node.js
-RUN curl -sL https://deb.nodesource.com/setup_12.x -o node_setup.sh && \
+RUN curl -sL https://deb.nodesource.com/setup_14.x -o node_setup.sh && \
     bash node_setup.sh && \
     apt-get install -y nodejs && \
     npm install npm -g
@@ -92,9 +92,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     apt-get install -y yarn
 
 # Ansible
-RUN apt-add-repository ppa:ansible/ansible && \
-    apt-get update && \
-    apt-get install -y ansible
+RUN apt-get install -y ansible
 
 # SSH
 RUN mkdir ~/.ssh && touch ~/.ssh_config
