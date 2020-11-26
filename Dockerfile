@@ -80,7 +80,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
     composer self-update
 
 # Node.js
-RUN curl -sL https://deb.nodesource.com/setup_12.x -o node_setup.sh && \
+RUN curl -sL https://deb.nodesource.com/setup_14.x -o node_setup.sh && \
     bash node_setup.sh && \
     apt-get install -y nodejs && \
     npm install npm -g
