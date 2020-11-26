@@ -61,7 +61,7 @@ RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && \
     php8.0-gmp \
     php8.0-imap \
     php8.0-intl \
-    php8.0-json \
+    php-json \
     php8.0-ldap \
     php8.0-mbstring \
     php8.0-mysql \
@@ -69,7 +69,7 @@ RUN LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php && \
     php8.0-soap \
     php8.0-sqlite3 \
     php8.0-xml \
-    php8.0-xmlrpc \
+    php-xmlrpc \
     php8.0-xsl \
     php8.0-zip \
     php8.0-phpdbg
